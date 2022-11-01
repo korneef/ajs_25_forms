@@ -9,7 +9,7 @@ describe('e2e start test', () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({
       // headless: false,
-      // slowMo: 100,
+      slowMo: 100,
       // devtools: true,
     });
     page = await browser.newPage();
@@ -22,7 +22,7 @@ describe('e2e start test', () => {
     await page.waitForSelector('.button-toggle__popower-form');
   });
 
-  // afterAll(async () => {
-  //   await browser.close();
-  // });
+  afterAll(async () => {
+    await browser.close();
+  });
 });
