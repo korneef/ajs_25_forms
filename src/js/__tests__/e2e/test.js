@@ -8,9 +8,9 @@ describe('e2e start test', () => {
   const baseUrl = 'http://localhost:8888';
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: false,
-      slowMo: 100,
-      devtools: true,
+      // headless: false,
+      // slowMo: 100,
+      // devtools: true,
     });
     page = await browser.newPage();
   });
