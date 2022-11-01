@@ -22,7 +22,7 @@ describe('e2e start test', () => {
     await page.waitForSelector('.button-toggle__popower-form');
   });
 
-  afterAll(async () => {
-    await browser.close();
-  });
+  // afterAll(async () => {
+  //   await browser.close();
+  // });
 });
