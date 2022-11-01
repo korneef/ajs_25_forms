@@ -18,11 +18,13 @@ describe('e2e start test', () => {
   test('button test', async () => {
     await page.goto(baseUrl);
     const button = await page.$('.button-toggle__button');
+    // eslint-disable-next-line no-console
+    console.log(button);
     button.click();
     await page.waitForSelector('.button-toggle__popower-form');
   });
 
-  afterAll(async () => {
-    await browser.close();
-  });
+  // afterAll(async () => {
+  //   await browser.close();
+  // });
 });
